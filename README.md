@@ -129,6 +129,22 @@ swl_bitacora/
 
 ---
 
+## ⚠️ Disclaimer
+
+This software is provided for personal, experimental use and is offered **"as is" without warranty of any kind**.
+
+It has been tested on the author's own equipment (EA5XQ — Yaesu FT-920 and Icom IC-756) and works correctly in that setup. The author accepts no responsibility for any damage to radio equipment, loss of data, or unintended transmissions that may result from its use.
+
+Specific points to be aware of:
+
+- **Tuning commands** — clicking a station row sends frequency and mode to the radio via CAT/CI-V. Verify your radio's baud rate and, for the IC-756, the CI-V address (default assumed: 0x58) before connecting.
+- **Monitor mode** — the frequency/mode monitor is strictly read-only; it never writes to the radio while active.
+- **Logbook** — new entries are stored in browser `localStorage` only. They are not synced anywhere and will be lost if you clear your browser data. Export regularly if the log matters to you.
+
+Use at your own risk. The MIT licence in this repository includes a full limitation-of-liability clause.
+
+---
+
 ## 🪪 Licence
 
 MIT — see [LICENSE](LICENSE).  
